@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="edge">
+<link rel="icon" href="logo2.ico" type="image/x-icon" sizes="16">
+
+<meta name="viewport" content="width=device-width, scale=1.0">
+<title>mentoriny_Centrale</title>
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Formulaire de connexion -->
+        <form id="loginForm" action="{{ url_for('login') }}" method="POST">
+            <h1>login</h1>
+            <div class="input_box">
+                <input type="text" name="username" placeholder="username" id="username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input_text">
+                <input type="password" name="password"   placeholder="password" id="password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember_forgot">
+                <label><input type="checkbox">remember me</label>
+                <a href="#">forget password?</a>
+            </div>
+            <button type="submit" class="btn">login</button>
+            <div class="register_link">
+                <p>Don't have an account</p>
+                <!-- lien vers le formulaire d'inscription -->
+                <a href="#signupForm">sign up</a>
+            </div>
+        </form>
+
+        <!-- Formulaire d'inscription -->
+        <form id="signupForm" action="{{ url_for('form_signup') }}" method="POST" style="display: none;">
+            <h1>Sign Up</h1>
+            <div class="input_box">
+                <input type="text" placeholder="username" name="username" id="new_username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input_text">
+                <input type="email" placeholder="email" name="email" id="email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input_text">
+                <input type="password" name="password" placeholder="password" id="new_password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+            <div class="login_link">
+                <p>Already have an account</p>
+                <!-- lien vers le formulaire de connexion -->
+                <a href="#loginForm">login</a>
+            </div>
+        </form>
+
+        <h1>{{info}}</h1>
+    </div>
+
+    <!-- Votre JavaScript pour basculer entre les formulaires -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Cible les liens "sign up" et "login" et les formulaires correspondants
+            var signUpLink = document.querySelector("a[href='#signupForm']");
+            var loginLink = document.querySelector("a[href='#loginForm']");
+            var signUpForm = document.getElementById("signupForm");
+            var loginForm = document.getElementById("loginForm");
+
+            // Affiche le formulaire d'inscription et masque le formulaire de connexion
+            signUpLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                signUpForm.style.display = "block";
+                loginForm.style.display = "none";
+            });
+
+            // Affiche le formulaire de connexion et masque le formulaire d'inscription
+            loginLink.addEventListener("click", function(event) {
+                event.preventDefault();
+                signUpForm.style.display = "none";
+                loginForm.style.display = "block";
+            });
+        });
+    </script>
+</body>
+</html>

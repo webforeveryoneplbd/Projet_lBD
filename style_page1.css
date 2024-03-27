@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@font-face {
+    font-family: 'Poppins';
+    src: url('chemin_vers_le_fichier_font.woff2') format('woff2'),
+         url('chemin_vers_le_fichier_font.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles spécifiques */
+body {
+    font-family: 'Poppins', sans-serif; /* Utilisation de la police importée */
+    line-height: 1.6;
+    background-color: #e8eaef;
+    min-height: 240vh;
+}
+
+header {
+    background-color: #e8eaef;
+    padding: 10px;
+    text-align: center;
+}
+
+.images {
+    background-color: #e8eaef;
+    padding: 0px;
+    text-align: center;
+    background-image: url('image1.jpg');
+    background-size:contain; /* Remplacez 'cover' par 'contain' pour ajuster la taille de l'image à la boîte sans déformation */
+    background-repeat: no-repeat; /* Assurez-vous que l'image de fond ne se répète pas */
+    background-position:center;
+
+}
+
+.h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 300%;
+    text-align: center;
+    color: black;
+    background-color: #e8eaef;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: center;
+    color: rgb(5, 46, 151);
+}
+
+
+
+.objectives {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    color: black;
+    margin-bottom:10%;
+    background-color:#e8eaef ;
+ 
+}
+
+.buttons {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    text-align: center;
+    color: blue;
+    margin-bottom:30%;
+}
+
+.footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 90px;
+    color: rgb(102, 102, 134);
+}
+
+.profile {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    text-align: center;
+    color: blue;
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
+.links{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:right;
+    display: flex;
+    width: 900px;
+    font-size: medium;
+    color: blue;
+    margin-bottom: 10%;
+    margin-right: 90px;
+
+}
+.header-content {
+    display: flex; /* Utilisation de Flexbox pour aligner les éléments horizontalement */
+     /* Centre les éléments verticalement */
+}
+.administrators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.admin {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.benifites{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+    color: aqua;
+
+}
+.container {
+    display: flex; /* Utilisation de Flexbox pour aligner les éléments horizontalement */
+    justify-content: space-between; /* Répartit l'espace disponible entre les éléments */
+    max-width: 1200px; /* Limite la largeur du conteneur pour le centrage */
+    margin: 0px auto; /* Centrage horizontal */
+}
+
+.text, .image {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-basis: 80%; /* Définit la largeur des deux colonnes */
+    padding: opx;
+    background-color: #e8eaef ; /* Fond blanc pour distinguer les deux parties */
+}
+
+.text h2, .image h2 {
+    text-align: center;
+}
+
+
+.mission , .objectives{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    flex-basis: 80%; /* Définit la largeur des deux colonnes */
+    padding: 0px;
+    background-color: #e8eaef; /* Fond blanc pour distinguer les deux parties */
+}
+
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+}

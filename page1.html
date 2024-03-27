@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plateforme de Mentorat</title>
+<link rel="stylesheet" href="style_page1.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+        
+        <img src="logo2.ico" alt="logo" width="40px" height="50px">
+        <h1 class="h1">mentoriny</h1>
+        <section class="links">
+            <li><a href="our_team.html">Nos coach</a></li>
+            <li><a href="case_studies.html">case studies </a></li>
+            <li><a href="mentoriny_ressources.html">mentoriny ressources</a></li>
+            <li><a href="why_mentoriny.html">pourquoi mentoriny</a></li>
+            <li><a href="nous concatcter.html">nous contacter</a></li>
+            <li><button onclick="window. location.href='page2_authentifier.html'"weidth="15px" height="10px">se connecter </button></li>
+
+        </section>
+        </div>
+        
+    </header>
+    <section class="objectives">
+        <h1>système de mentorat en ligne sécurisé</h1>
+
+        <div>for your face to face and mentoring programmes</div>
+        <img src="image1.jpg" alt="image1">
+    </section>
+    <section class="objectives">
+        <div class="container">
+            <div class="text">
+                <h2>Objectifs</h2>
+                <ul>
+                    <li>Offrir un environnement sûr et inclusif pour le mentorat.</li>
+                    <li>Faciliter l'échange de connaissances et d'expérience entre mentors et mentorés.</li>
+                    <li>Encourager la croissance professionnelle et personnelle des participant·e·s.</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="image4.jpeg" alt="image4" width="500px" height="300px">
+        </div>
+    </section>
+    
+    <div class="container">
+        <div class="mission">
+            <h2>Notre Mission</h2>
+            <p>Notre mission est de connecter des mentors expérimentés avec des mentorés motivés pour favoriser le développement professionnel et personnel.</p>
+        </div>
+        <img src="image2.jpg" alt="image" width="500px" height="300px">
+    </div>
+    <section>
+        <h1>Actualités</h1>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="image1.jpg" style="width:62%" height="80%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="image2.jpg" style="width:62%" height="80%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="image3.jpeg" style="width:62%" height="80%">
+            </div>
+        </div>
+
+        <script>
+            var slideIndex2 = 0;
+            showSlides2();
+
+            function showSlides2() {
+                var j;
+                var slides2 = document.getElementsByClassName("mySlides");
+                for (j = 0; j < slides2.length; j++) {
+                    slides2[j].style.display = "none";
+                }
+                slideIndex2++;
+                if (slideIndex2 > slides2.length) {slideIndex2 = 1}
+                slides2[slideIndex2-1].style.display = "block";
+                setTimeout(showSlides2, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </section>
+    <section class="administrators">
+        <h2 class="admin">Équipe Administratrice</h2>
+        <div class="profile">
+            <img src="admin1.jpg" alt="Photo de l'administrateur ">
+            <h3>gareh malika</h3>
+            <p>Rôle: Fondateur</p>
+        </div>
+        <div class="profile">
+            <img src="admin2.jpg" alt="Photo de l'administrateur ">
+            <h3>Ikram ferdaous</h3>
+            <p>Rôle:fondateur</p>
+        </div>
+        <div class="profile">
+            <img src="admin1.jpg" alt="Photo de l'administrateur ">
+            <h3>habbani mohammed </h3>
+            <p>Rôle: Fondateur</p>
+        </div>
+        <div class="profile">
+            <img src="admin1.jpg" alt="Photo de l'administrateur ">
+            <h3>ettaib mohammed_yassine</h3>
+            <p>Rôle: Fondateur</p>
+        </div>
+        <div class="profile">
+            <img src="admin1.jpg" alt="Photo de l'administrateur ">
+            <h3>Fradi emina</h3>
+            <p>Rôle: Fondateur</p>
+        </div>
+
+
+       
+    </section>
+
+    
+    
+    <footer>
+        <p>© 2024 Plateforme de Mentorat. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
